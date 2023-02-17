@@ -107,6 +107,17 @@ class BaseCAM:
             input_tensor: torch.Tensor,
             targets: List[torch.nn.Module],
             eigen_smooth: bool) -> np.ndarray:
+        """_summary_
+
+        Args:
+            input_tensor (torch.Tensor): _description_
+            targets (List[torch.nn.Module]): _description_
+            eigen_smooth (bool): _description_
+
+        Returns:
+            np.ndarray: _description_
+        """
+
         activations_list = [a.cpu().data.numpy()
                             for a in self.activations_and_grads.activations]
         grads_list = [g.cpu().data.numpy()
@@ -178,7 +189,13 @@ class BaseCAM:
                  input_tensor: torch.Tensor,
                  targets: List[torch.nn.Module] = None,
                  aug_smooth: bool = False,
-                 eigen_smooth: bool = False) -> np.ndarray:
+                 eigen_smooth: bool = False, 
+                 _anim: bool = False) -> np.ndarray:
+
+        # animate the cam instead
+        if _anim:
+            pass
+
 
         # Smooth the CAM result with test time augmentation
         if aug_smooth is True:

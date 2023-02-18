@@ -148,8 +148,9 @@ class BaseCAM:
 
 
         for layer, _ in self.model.named_modules():
-            self.target_layers = [attrgetter(layer)(self.model)]
+            
             try:
+                self.target_layers = [attrgetter(layer)(self.model)]
                 cam = self.__call__(input_tensor=img_tensor, targets=None) # for now targets was always None...
 
                 temp_dict[str("%06d"%count)] = cam

@@ -138,11 +138,10 @@ class BaseCAM:
         temp_dict = {}
         
         # store init parameters
-        if hasattr(self, "normalization"):
-            reset_norm = False
-            if self.normalization:
-                reset_norm = True
-            self.normalization = False
+        reset_norm = False
+        if hasattr(self, "normalization") and self.normalization:
+            reset_norm = True
+        self.normalization = False
         
         init_target_layers = self.target_layers
 

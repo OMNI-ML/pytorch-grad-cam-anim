@@ -1,6 +1,6 @@
 import ffmpeg
 import matplotlib.pyplot as plt
-from image import show_cam_on_image
+from .image import show_cam_on_image
 
 def _ffmpeg_standard_quality(tmp_path, output_fname, frame_rate=5):
   """ _ffmpeg_standard_quality

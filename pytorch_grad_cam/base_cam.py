@@ -156,6 +156,7 @@ class BaseCAM:
                 temp_dict[str("%06d"%count)] = cam
                 layer_name_map[str("%06d"%count)] = layer
                 count += 1
+                self.activations_and_grads.release()
             except:
                 # TODO: add more informative thing here
                 print('skipping ' + layer)

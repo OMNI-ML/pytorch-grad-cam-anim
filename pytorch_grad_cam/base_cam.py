@@ -142,14 +142,15 @@ class BaseCAM:
         if hasattr(self, "normalization") and self.normalization:
             reset_norm = True
         self.normalization = False
-        
         init_target_layers = self.target_layers
+        init_activations_and_grads = self.activations_and_grads
 
 
         for layer, _ in self.model.named_modules():
             try:
                 self.target_layers = [attrgetter(layer)(self.model)]
-                print(layer, self.target_layers[0])
+                self.activations_and_grads = ActivationsAndGradients(self.model, self.target_layers, self.reshape_transform)
+                # print(layer, self.target_layers[0])
                 cam = self.__call__(input_tensor=img_tensor, targets=None) # for now targets was always None...
 
                 temp_dict[str("%06d"%count)] = cam
@@ -162,9 +163,8 @@ class BaseCAM:
         # reset init state
         if reset_norm:
             self.normalization = True
-
         self.target_layers = init_target_layers
-    
+        self.activations_and_grads = init_activations_and_grads
     
         # normalize 
         mx = np.max(np.concatenate(list(temp_dict.values())))

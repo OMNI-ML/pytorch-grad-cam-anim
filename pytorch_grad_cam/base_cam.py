@@ -49,41 +49,15 @@ class BaseCAM:
         raise Exception("Not Implemented")
     
     def cam_anim(self,
-                architecture_type, 
                 img,
                 img_tensor,
-                cam_func_name='GradCAM',
                 norm_type='global', # TODO: implement "both" 
-                targets=None,
                 frame_rate=5, 
                 tmp_dir='tmp_anim', 
                 output_fname='output.mp4',
                 keep_frames=False,
                 overlay=True, # TODO: implement this
-                return_layer_name_map=False,
-                use_cuda=False,
                 quality='standard'):
-
-        """_summary_
-
-            Args:
-                model (_type_): _description_
-                architecture_type (_type_): _description_
-                img (_type_): _description_
-                img_tensor (_type_): _description_
-                cam_func_name (str, optional): the exact name of the CAM class to use; options: ['GradCAM', 'HiResCAM', ...]. Defaults to 'GradCAM'.
-                norm_type (str, optional): _description_. Defaults to 'global'.
-                frame_rate (int, optional): _description_. Defaults to 5.
-                tmp_dir (str, optional): _description_. Defaults to 'tmp_anim'.
-                output_fname (str, optional): _description_. Defaults to 'output.mp4'.
-                keep_frames (bool, optional): _description_. Defaults to False.
-                overlay (bool, optional): _description_. Defaults to True.
-                use_cuda (bool, optional): _description_. Defaults to False.
-                quality (str, optional): _description_. Defaults to 'standard'.
-
-            Returns:
-                _type_: _description_
-        """
         
         """ cam_anim
             TODO: General description here
@@ -170,7 +144,6 @@ class BaseCAM:
         # normalize 
         mx = np.max(np.concatenate(list(temp_dict.values())))
         mn = np.min(np.concatenate(list(temp_dict.values())))
-
         for key, val in temp_dict.items():
             if norm_type == 'global' or norm_type == 'both':
                 val = (val - mn) / (mx - mn)

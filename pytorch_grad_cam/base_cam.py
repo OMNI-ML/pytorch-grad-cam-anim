@@ -170,7 +170,7 @@ class BaseCAM:
                 # TODO: add more informative thing here
                 print('skipping ' + layer)
 
-            metrics_log.append(layer_record)
+            metrics_log["layers_records"].append(layer_record)
 
 
 

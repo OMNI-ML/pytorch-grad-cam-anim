@@ -11,9 +11,10 @@ from pytorch_grad_cam.activations_and_gradients import ActivationsAndGradients
 from pytorch_grad_cam.utils.svd_on_activations import get_2d_projection
 from pytorch_grad_cam.utils.image import scale_cam_image
 from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
-from pytorch_grad_cam.utils.cam_anim import create_image_as_png, _ffmpeg_high_quality, _ffmpeg_standard_quality
+from pytorch_grad_cam.utils.cam_anim import create_image_as_png, _ffmpeg_high_quality, _ffmpeg_standard_quality, count_parameters
 
-
+import time
+import json
 
 class BaseCAM:
     def __init__(self,
@@ -57,7 +58,8 @@ class BaseCAM:
                 output_fname='output.mp4',
                 keep_frames=False,
                 overlay=True, # TODO: implement this
-                quality='standard'):
+                quality='standard',
+                log_dir = None):
         
         """ cam_anim
             TODO: General description here
@@ -86,6 +88,9 @@ class BaseCAM:
             colormap='jet'
 
         """
+        
+        start = time.time()
+        metrics_log = {"n_parameters": count_parameters(self.model), "layers_records": []}
 
         # cast the tmp_dir to string-representation (if passed as a Path object) TODO: test this with PATHS
         if not tmp_dir=='tmp_anim': tmp_dir = str(tmp_dir)
@@ -103,11 +108,13 @@ class BaseCAM:
         else: # clean out any existing images if the dir already exists
             for f in glob.glob(tmp_dir + '*'): os.remove(f)
 
+        if log_dir is None:
+            log_dir = tmp_dir
+
         # EMILY ------------------------------------  
         # Generate & save images/arrays for all layers; save them to tmp_dir
 
         count = 0
-        layers = []
         layer_name_map = {}
         temp_dict = {}
         
@@ -119,21 +126,54 @@ class BaseCAM:
         init_target_layers = self.target_layers
         init_activations_and_grads = self.activations_and_grads
 
-
+        mx = None
+        mn = None
         for layer, _ in self.model.named_modules():
+            layer_record = {"layer_name": layer, "layer_id": str("%06d"%count), "error": None}
+            layer_start_time = time.time()
             try:
                 self.target_layers = [attrgetter(layer)(self.model)]
                 self.activations_and_grads = ActivationsAndGradients(self.model, self.target_layers, self.reshape_transform)
                 # print(layer, self.target_layers[0])
                 cam = self.__call__(input_tensor=img_tensor, targets=None) # for now targets was always None...
 
+                
+
+                # get global max value
+                # if mx is None:
+                #     mx = np.max(cam)
+                # else:
+                #     layer_mx = np.max(cam)
+                #     if mx < layer_mx:
+                #         mx = layer_mx
+                
+                # # get global max value
+                # if mn is None:
+                #     mn = np.min(cam)
+                # else:
+                #     layer_mn = np.min(cam)
+                #     if mn > layer_mn:
+                #         mn = layer_mn
+                
+                # TODO: save unnormalized cam to file instead of storing to temp_dict?
+
+                # store cam to temp_dict
                 temp_dict[str("%06d"%count)] = cam
                 layer_name_map[str("%06d"%count)] = layer
                 count += 1
                 self.activations_and_grads.release()
-            except:
+
+                layer_end_time = time.time()
+                layer_record["layer_time"] = (layer_end_time-layer_start_time).total_seconds()
+            except Exception as ex:
+                layer_record["error"] = str(ex)
                 # TODO: add more informative thing here
                 print('skipping ' + layer)
+
+            metrics_log.append(layer_record)
+
+
+
 
         # reset init state
         if reset_norm:
@@ -144,13 +184,13 @@ class BaseCAM:
         # normalize 
         mx = np.max(np.concatenate(list(temp_dict.values())))
         mn = np.min(np.concatenate(list(temp_dict.values())))
-        for key, val in temp_dict.items():
+        for layer_id, cam in temp_dict.items():
             if norm_type == 'global' or norm_type == 'both':
-                val = (val - mn) / (mx - mn)
-                create_image_as_png(img, key, val, layer_name_map, tmp_dir+'global')
+                cam = (cam - mn) / (mx - mn)
+                create_image_as_png(img, layer_id, cam, layer_name_map, tmp_dir+'global')
             elif norm_type == 'layer' or norm_type == 'both':
-                val = (val - np.min(val)) / (np.max(val) - np.min(val))
-                create_image_as_png(img, key, val, layer_name_map, tmp_dir+'layer')
+                cam = (cam - np.min(cam)) / (np.max(cam) - np.min(cam))
+                create_image_as_png(img, layer_id, cam, layer_name_map, tmp_dir+'layer')
         
 
         # O(L*nm), n=width, m=height
@@ -168,7 +208,15 @@ class BaseCAM:
 
         # return the list of two-tuples mapping original layer name to new filename
 
-        return layer_name_map
+        end = time.time()
+        metrics_log["cam_anim_time"] =  (end-start).total_seconds()
+
+
+        # with open("sample.json", "w") as outfile:
+        #     outfile.write(metrics_log)
+
+
+        return metrics_log
 
 
     def get_cam_image(self,

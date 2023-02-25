@@ -2,6 +2,19 @@ import ffmpeg
 import matplotlib.pyplot as plt
 from .image import show_cam_on_image
 
+
+def count_parameters(model):
+  """https://discuss.pytorch.org/t/how-do-i-check-the-number-of-parameters-of-a-model/4325/7
+
+  Args:
+      model (_type_): _description_
+
+  Returns:
+      _type_: _description_
+  """
+  
+  return sum(p.numel() for p in model.parameters() if p.requires_grad)
+
 def _ffmpeg_standard_quality(tmp_path, output_fname, frame_rate=5):
   """ _ffmpeg_standard_quality
       Generates and saves-to-file the animated .MP4 video in standard quality.

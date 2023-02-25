@@ -58,8 +58,7 @@ class BaseCAM:
                 output_fname='output.mp4',
                 keep_frames=False,
                 overlay=True, # TODO: implement this
-                quality='standard',
-                log_dir = None):
+                quality='standard'):
         
         """ cam_anim
             TODO: General description here
@@ -107,9 +106,6 @@ class BaseCAM:
                 return None
         else: # clean out any existing images if the dir already exists
             for f in glob.glob(tmp_dir + '*'): os.remove(f)
-
-        if log_dir is None:
-            log_dir = tmp_dir
 
         # EMILY ------------------------------------  
         # Generate & save images/arrays for all layers; save them to tmp_dir
@@ -162,8 +158,7 @@ class BaseCAM:
                 self.activations_and_grads.release()
 
                 layer_end_time = time.time()
-                layer_record["layer_time"] = (layer_end_time-layer_start_time).total_seconds()
-
+                layer_record["layer_time"] = layer_end_time-layer_start_time
             except Exception as ex:
                 layer_record["error"] = str(ex)
                 # TODO: add more informative thing here
@@ -206,7 +201,7 @@ class BaseCAM:
         # return the list of two-tuples mapping original layer name to new filename
 
         end = time.time()
-        metrics_log["cam_anim_time"] =  (end-start).total_seconds()
+        metrics_log["cam_anim_time"] =  end-start
 
 
         # with open("sample.json", "w") as outfile:

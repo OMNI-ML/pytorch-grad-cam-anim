@@ -169,11 +169,8 @@ class BaseCAM:
                 # TODO: add more informative thing here
                 print('skipping ' + layer)
                 print(ex)
-
+            
             metrics_log["layers_records"].append(layer_record)
-
-
-
 
         # reset init state
         if reset_norm:

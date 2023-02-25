@@ -137,8 +137,6 @@ class BaseCAM:
                 # print(layer, self.target_layers[0])
                 cam = self.__call__(input_tensor=img_tensor, targets=None) # for now targets was always None...
 
-                
-
                 # get global max value
                 # if mx is None:
                 #     mx = np.max(cam)
@@ -165,10 +163,12 @@ class BaseCAM:
 
                 layer_end_time = time.time()
                 layer_record["layer_time"] = (layer_end_time-layer_start_time).total_seconds()
+
             except Exception as ex:
                 layer_record["error"] = str(ex)
                 # TODO: add more informative thing here
                 print('skipping ' + layer)
+                print(ex)
 
             metrics_log["layers_records"].append(layer_record)
 

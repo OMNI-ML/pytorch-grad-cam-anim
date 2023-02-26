@@ -124,11 +124,11 @@ class BaseCAM:
 
         mx = None
         mn = None
-        for layer, _ in self.model.named_modules():
-            layer_record = {"layer_name": layer, "layer_id": str("%06d"%count), "error": None}
+        for layer_name, layer_module in self.model.named_modules():
+            layer_record = {"layer_name": layer_name, "layer_id": str("%06d"%count), "layer_num_parameters": count_parameters(layer_module), "error": None}
             layer_start_time = time.time()
             try:
-                self.target_layers = [attrgetter(layer)(self.model)]
+                self.target_layers = [attrgetter(layer_name)(self.model)]
                 self.activations_and_grads = ActivationsAndGradients(self.model, self.target_layers, self.reshape_transform)
                 # print(layer, self.target_layers[0])
                 cam = self.__call__(input_tensor=img_tensor, targets=None) # for now targets was always None...
@@ -153,7 +153,7 @@ class BaseCAM:
 
                 # store cam to temp_dict
                 temp_dict[str("%06d"%count)] = cam
-                layer_name_map[str("%06d"%count)] = layer
+                layer_name_map[str("%06d"%count)] = layer_name
                 count += 1
                 self.activations_and_grads.release()
 
@@ -162,7 +162,7 @@ class BaseCAM:
             except Exception as ex:
                 layer_record["error"] = str(ex)
                 # TODO: add more informative thing here
-                print('skipping ' + layer)
+                print('skipping ' + layer_name)
                 print(ex)
             
             metrics_log["layers_records"].append(layer_record)

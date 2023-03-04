@@ -8,6 +8,7 @@ import torch
 import ttach as tta
 from typing import Callable, List, Tuple
 from operator import attrgetter
+from tqdm import tqdm
 from pytorch_grad_cam.activations_and_gradients import ActivationsAndGradients
 from pytorch_grad_cam.utils.svd_on_activations import get_2d_projection
 from pytorch_grad_cam.utils.image import scale_cam_image
@@ -128,11 +129,22 @@ class BaseCAM:
 
         mx = None
         mn = None
-        for layer_name, layer_module in self.model.named_modules():
-            layer_record = {"layer_name": layer_name, "layer_id": str("%06d"%count), "layer_num_parameters": count_parameters(layer_module), "error": None}
+
+        # n_layers = 0
+        # for layer_name, layer_module in self.model.named_modules():
+        #     n_layers += 1
+        layer_names = [layer_name for layer_name, _ in self.model.named_modules()]
+        pbar = tqdm(layer_names, desc="Model Layer Loop")
+        for layer_name in pbar:
+            pbar.set_description(f"Model Layer Loop - {layer_name}")
+            pbar.refresh()
+            
+            layer_record = {"layer_name": layer_name, "layer_id": str("%06d"%count), "error": None}
             layer_start_time = time.time()
             try:
-                self.target_layers = [attrgetter(layer_name)(self.model)]
+                layer_module = attrgetter(layer_name)(self.model)
+                layer_record.update({"layer_num_parameters": count_parameters(layer_module)})
+                self.target_layers = [layer_module]
                 self.activations_and_grads = ActivationsAndGradients(self.model, self.target_layers, self.reshape_transform)
                 # print(layer, self.target_layers[0])
                 cam = self.__call__(input_tensor=img_tensor, targets=None) # for now targets was always None...
@@ -178,7 +190,7 @@ class BaseCAM:
             self.normalization = True
         self.target_layers = init_target_layers
 
-        with open(tmp_dir+"init_activations_and_grads.pkl") as f:
+        with open(tmp_dir+"init_activations_and_grads.pkl", "rb") as f:
             self.activations_and_grads = pickle.load(f)
         # self.activations_and_grads = init_activations_and_grads
     

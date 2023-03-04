@@ -1,6 +1,7 @@
 import os
 import glob
 import shutil
+import pickle
 
 import numpy as np
 import torch
@@ -120,7 +121,10 @@ class BaseCAM:
             reset_norm = True
         self.normalization = False
         init_target_layers = self.target_layers
-        init_activations_and_grads = self.activations_and_grads
+
+        # TODO: activations and gradients are large. Need to dump this to storage instead to releave memory
+        with open(tmp_dir+"init_activations_and_grads.pkl", 'wb') as f:
+            pickle.dump(self.activations_and_grads, f)
 
         mx = None
         mn = None
@@ -156,7 +160,9 @@ class BaseCAM:
                 layer_name_map[str("%06d"%count)] = layer_name
                 count += 1
                 self.activations_and_grads.release()
+                del self.activations_and_grads
 
+                # save layer time
                 layer_end_time = time.time()
                 layer_record["layer_time"] = layer_end_time-layer_start_time
             except Exception as ex:
@@ -171,7 +177,10 @@ class BaseCAM:
         if reset_norm:
             self.normalization = True
         self.target_layers = init_target_layers
-        self.activations_and_grads = init_activations_and_grads
+
+        with open(tmp_dir+"init_activations_and_grads.pkl") as f:
+            self.activations_and_grads = pickle.load(f)
+        # self.activations_and_grads = init_activations_and_grads
     
         # normalize 
         mx = np.max(np.concatenate(list(temp_dict.values())))

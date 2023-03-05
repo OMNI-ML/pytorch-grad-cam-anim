@@ -194,6 +194,7 @@ class BaseCAM:
         with open(tmp_dir+"init_activations_and_grads.pkl", "rb") as f:
             self.activations_and_grads = pickle.load(f)
         # self.activations_and_grads = init_activations_and_grads
+        os.remove(tmp_dir+"init_activations_and_grads.pkl")
     
         # normalize 
         mx = np.max(np.concatenate(list(temp_dict.values())))

@@ -9,6 +9,7 @@ import ttach as tta
 from typing import Callable, List, Tuple
 from operator import attrgetter
 from tqdm import tqdm
+from pathlib import Path
 from pytorch_grad_cam.activations_and_gradients import ActivationsAndGradients
 from pytorch_grad_cam.utils.svd_on_activations import get_2d_projection
 from pytorch_grad_cam.utils.image import scale_cam_image
@@ -138,7 +139,7 @@ class BaseCAM:
         for layer_name in pbar:
             pbar.set_description(f"Model Layer Loop - {layer_name}")
             pbar.refresh()
-            
+
             layer_record = {"layer_name": layer_name, "layer_id": str("%06d"%count), "error": None}
             layer_start_time = time.time()
             try:
@@ -201,7 +202,7 @@ class BaseCAM:
             if norm_type == 'global' or norm_type == 'both':
                 cam = (cam - mn) / (mx - mn)
                 create_image_as_png(img, layer_id, cam, layer_name_map, tmp_dir+'global')
-            elif norm_type == 'layer' or norm_type == 'both':
+            if norm_type == 'layer' or norm_type == 'both':
                 cam = (cam - np.min(cam)) / (np.max(cam) - np.min(cam))
                 create_image_as_png(img, layer_id, cam, layer_name_map, tmp_dir+'layer')
         
@@ -213,8 +214,19 @@ class BaseCAM:
         if os.path.exists(output_fname): os.remove(output_fname)
 
         # generate the animation; automatically saves to file
-        if quality =='high': _ffmpeg_high_quality(tmp_dir, output_fname, frame_rate=frame_rate)
-        else: _ffmpeg_standard_quality(tmp_dir, output_fname, frame_rate=frame_rate)
+        if norm_type == 'both':    
+            frames_dir = {"global": tmp_dir+os.sep+'global', "layer": tmp_dir+os.sep+'layer'}
+        else: frames_dir = {norm_type: tmp_dir+os.sep+norm_type}
+
+        for n_type, fr_dir in frames_dir.items():
+            # path semantics
+            Path(fr_dir).mkdir(parents=True, exist_ok=True)
+            output_fname = Path(output_fname)
+            output_fname = output_fname.parent / output_fname.stem + f"_{n_type}" + output_fname.suffix
+            output_fname = str(output_fname)
+
+            if quality =='high': _ffmpeg_high_quality(fr_dir, output_fname, frame_rate=frame_rate)
+            else: _ffmpeg_standard_quality(fr_dir, output_fname, frame_rate=frame_rate)
 
         # if we do not keep the individual frames, we remove the tmp_dir & contents
         if not keep_frames: shutil.rmtree(tmp_dir)

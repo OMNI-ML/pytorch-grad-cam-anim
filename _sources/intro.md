@@ -10,7 +10,7 @@ Check out the content pages bundled with this sample book to see more.
 <!-- https://mstruwig.com/posts/jupyterbook-video/ -->
 
 <video width="1024" heigh="1024" controls>
-    <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\EigenGradCAM_animlayer.mp4" type="video/mp4">
+    <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\HiResCAM_animlayer.mp4" type="video/mp4">
 </video>
 
 ```{tableofcontents}

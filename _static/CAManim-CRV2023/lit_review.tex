@@ -1,0 +1,18 @@
+
+% Describe need for interpretability of model predictions
+%Trust evaluation : Lipton et al. \cite{lipton2018mythos} emphasized the need for interpretable and trustworthy networks. Ribeiro et al. \cite{ribeiro2016should} conducted human studies to assess if humans can place trust in a classifier
+
+%Visualizing CNNs : One of the earliest efforts to interpret CNNs was made by Zeiler and Fergus \cite{zeiler2014visualizing} by highlighting the pixels in image responsible for activation of a neuron in a higher layer. They achieved this by using deconvolution approach which allows data to flow from a neuron activation in higher layer back to input image. Further, Simonyan et al. \cite{simonyan2013deep} obtained the partial derivatives of predicted class scores w.r.t. input pixels to produce class-specific saliency maps.
+
+%Springenberg et al. \cite{springenberg2014striving} extended this work to Guided Backpropagation which modifies the backpropagating gradients to improve quality of saliency maps. These works are compared in \cite{mahendran2016salient}. The visualizations produced by Guided Backpropagation and Deconvolution, though high resolution, are not class-discriminative i.e. for a given image, visualizations w.r.t. different class nodes will be almost identical \cite{gradcam}. Sundarajan et al. \cite{sundararajan2017axiomatic} used integrated gradients to attribute the prediction of CNN to input pixels. Chattopadhyay et al. \cite{gradcampp} attempted to objectively evaluate efficacy of saliency visualizations.
+
+%Above methods provide explanations for individual image instances. Simonyan et al. \cite{simonyan2013deep} used gradient ascent to synthesize images that maximally activate a neuron to understand the overall notion of the concept it represents. Zhou et al. \cite{zhou2014object} show that activation maps in higher convolutional layers act as object detectors and trigger specific concepts.
+
+
+%Unreliability of saliency methods : Adebayo et al. \cite{adebayo2018sanity} and Kindermans et al. \cite{kindermans2019reliability} exposed the unreliability of gradient-based methods citing gradient saturation to be one of the main reasons.
+
+%Ablation studies : Morcos et al. \cite{morcos2018importance} used ablation analysis to quantify the reliance of network output on single neurons. According to this work, class selectivity is a poor predictor of neuron’s importance towards overall performance of network. Zhou et al. \cite{zhou2018revisiting} extends this work to show that ablation of highly selective units, though having negligible effect on overall accuracy, has severe impact on accuracy of specific classes.
+
+
+%In most of the saliency attribution papers, the saliency is computed with a single target layer. Commonly it is the last convolutional layer.  Here we support passing a list with multiple target layers.  It will compute the saliency image for every image, and then aggregate them (with a default mean aggregation). This gives you more flexibility in case you just want to use all conv layers for example, all Batchnorm layers, or something else.
+

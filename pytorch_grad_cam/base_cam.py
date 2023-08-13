@@ -223,7 +223,7 @@ class BaseCAM:
             # path semantics
             Path(fr_dir).mkdir(parents=True, exist_ok=True)
             output_fname = Path(output_fname)
-            output_fname = output_fname.parent / output_fname.stem + f"_{n_type}" + output_fname.suffix
+            output_fname = output_fname.parent / (output_fname.stem + f"_{n_type}" + output_fname.suffix)
             output_fname = str(output_fname)
 
             if quality =='high': _ffmpeg_high_quality(fr_dir, output_fname, frame_rate=frame_rate)

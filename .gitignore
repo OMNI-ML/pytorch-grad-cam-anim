@@ -2,3 +2,9 @@ build
 dist
 *.egg-info
 **/*.pyc
+
+
+docs/_build*
+docs/_static*
+# *.mp4
+# *.png

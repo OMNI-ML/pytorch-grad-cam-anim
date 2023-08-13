@@ -198,7 +198,10 @@ class BaseCAM:
         # self.activations_and_grads = init_activations_and_grads
         os.remove(tmp_dir+"init_activations_and_grads.pkl")
     
-        # normalize 
+        # normalize img
+        if np.max(img) > 1:
+            img = np.float32(img) / np.max(img)
+        # normalize cam
         mx = np.max(np.concatenate(list(temp_dict.values())))
         mn = np.min(np.concatenate(list(temp_dict.values())))
         for layer_id, cam in temp_dict.items():

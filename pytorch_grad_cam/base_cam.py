@@ -108,7 +108,9 @@ class BaseCAM:
                 print('ERROR: failed to create tmp_dir: ' + tmp_dir + '. Exitting.')                
                 return None
         else: # clean out any existing images if the dir already exists
-            for f in glob.glob(tmp_dir + '*'): os.remove(f)
+            # for f in glob.glob(tmp_dir + '*'): os.remove(f)
+            shutil.rmtree(tmp_dir)
+            os.mkdir(tmp_dir)
 
         # EMILY ------------------------------------  
         # Generate & save images/arrays for all layers; save them to tmp_dir

@@ -1,4 +1,4 @@
-# CAManim videos
+# DenseNet CAManim - Bear Image
 
 ## AblationCAM
 

@@ -4,6 +4,5 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: animations_breast_model
+- file: animations_densenet_bear

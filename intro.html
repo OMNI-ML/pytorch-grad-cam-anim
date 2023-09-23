@@ -191,6 +191,10 @@ const thebe_selector_output = ".output, .cell_output"
   
 
   
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
 
 </div>
   </nav>
@@ -431,7 +435,9 @@ title="Print to PDF"
       
   </ul>
 </div>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
+            <span class="fa-solid fa-list"></span>
+        </label>
     </div>
 </div>
             </div>
@@ -444,6 +450,24 @@ title="Print to PDF"
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abstract">
+   Abstract
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#camanim-videos">
+   CAManim videos
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -452,21 +476,21 @@ title="Print to PDF"
               
   <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-camanim">
 <h1>Welcome to CAManim!<a class="headerlink" href="#welcome-to-camanim" title="Permalink to this heading">#</a></h1>
-<p>The CAManim videos are below</p>
-<!-- This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
-
-Check out the content pages bundled with this sample book to see more. -->
-<!-- https://mstruwig.com/posts/jupyterbook-video/ -->
-<!-- <iframe src="_static\CAManim-CRV2023\main.tex" width="256" height="512"></iframe> -->
+<p>CAManim is a Python package for animating the output of Class Activation Maps (CAMs) from Convolutional Neural Networks (CNNs). CAMs are a way of visualising the features that a CNN has learned to recognise in an image. CAManim allows you to create animations of CAMs. In this case we are animating through the layers of a CNN model. Other potential use cases are possible, such as animating through the epochs of a CNN training process.</p>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this heading">#</a></h2>
+<p>Deep neural networks have been widely adopted in numerous domains due to their high performance and accessibility to developers and application-specific end-users. Fundamental to image-based applications is the development of Convolutional Neural Networks (CNNs), which possess the ability to automatically extract features from data. However, comprehending these complex models and their learned representations, which typically comprise millions of parameters and numerous layers, remains a challenge for both developers and end-users. This challenge arises due to the absence of interpretable and transparent tools to make sense of black-box models. There exists a growing body of Explainable Artificial Intelligence (XAI) literature, including a collection of methods denoted Class Activation Maps (CAMs), that seek to demystify what representations the model learns from the data, how it informs a given prediction, and why it, at times, performs poorly in certain tasks. We propose a novel XAI visualization method denoted CAManim that seeks to simultaneously broaden and focus end-user understanding of CNN predictions by animating the CAM-based network activation maps through all layers, effectively depicting from end-to-end how a model progressively arrives at the final layer activation. Herein, we demonstrate that CAManim works with any CAM-based method and various CNN architectures. Beyond qualitative model assessments, we additionally propose a novel quantitative assessment that expands upon the Remove and Debias (ROAD) metric, pairing the qualitative end-to-end network visual explanations assessment with our novel quantitative ``yellow brick ROAD” assessment (ybROAD). This builds upon prior research to address the increasing demand for interpretable, robust, and transparent model assessment methodology, ultimately improving an end-user’s trust in a given model’s predictions. Examples and source code can be found at: <a class="reference external" href="https://omni-ml.github.io/pytorch-grad-cam-anim/">https://omni-ml.github.io/pytorch-grad-cam-anim/</a></p>
+<p>We have generated a number of CAManim videos for different CNN architectures and datasets. These videos are available on this website below.</p>
+</section>
+<section id="camanim-videos">
+<h2>CAManim videos<a class="headerlink" href="#camanim-videos" title="Permalink to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="animations_breast_model.html">Breast model CAManim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="animations_densenet_bear.html">DenseNet CAManim - Bear Image</a></li>
 </ul>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -510,6 +534,32 @@ Check out the content pages bundled with this sample book to see more. -->
           </div>
           
           
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abstract">
+   Abstract
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#camanim-videos">
+   CAManim videos
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+            </div>
           
           
         </div>

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to CAManim! &#8212; CAManim</title>
+    <title>DenseNet CAManim - Bear Image &#8212; CAManim</title>
   
   
   
@@ -58,10 +58,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'animations_densenet_bear';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Breast model CAManim" href="animations_breast_model.html" />
+    <link rel="prev" title="Breast model CAManim" href="animations_breast_model.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
   </head>
@@ -105,7 +105,7 @@ const thebe_selector_output = ".output, .cell_output"
   
 
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
 
   
   
@@ -142,8 +142,8 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="animations_densenet_bear.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         DenseNet CAManim - Bear Image
                       </a>
                     </li>
@@ -191,6 +191,10 @@ const thebe_selector_output = ".output, .cell_output"
   
 
   
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
 
 </div>
   </nav>
@@ -221,8 +225,8 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="animations_densenet_bear.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         DenseNet CAManim - Bear Image
                       </a>
                     </li>
@@ -261,7 +265,7 @@ const thebe_selector_output = ".output, .cell_output"
   
 
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
 
   
   
@@ -289,15 +293,15 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to CAManim!
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="animations_breast_model.html">Breast model CAManim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="animations_densenet_bear.html">DenseNet CAManim - Bear Image</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">DenseNet CAManim - Bear Image</a></li>
 </ul>
 
     </div>
@@ -373,7 +377,7 @@ title="Source repository"
 </a>
 </a>
       
-      <li><a href="https://github.com/OMNI-ML/pytorch-grad-cam-anim/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/OMNI-ML/pytorch-grad-cam-anim/issues/new?title=Issue%20on%20page%20%2Fanimations_densenet_bear.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -398,7 +402,7 @@ title="Open an issue"
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/animations_densenet_bear.md" target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -431,7 +435,9 @@ title="Print to PDF"
       
   </ul>
 </div>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
+            <span class="fa-solid fa-list"></span>
+        </label>
     </div>
 </div>
             </div>
@@ -439,34 +445,312 @@ title="Print to PDF"
             
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to CAManim!</h1>
+    <h1>DenseNet CAManim - Bear Image</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ablationcam">
+   AblationCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eigencam">
+   EigenCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eigengradcam">
+   EigenGradCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gradcam">
+   GradCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gradcamelementwise">
+   GradCAMElementWise
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gradcamplusplus">
+   GradCAMPlusPlus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hirescam">
+   HiResCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#layercam">
+   LayerCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#randomcam">
+   RandomCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scorecam">
+   ScoreCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#xgradcam">
+   XGradCAM
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
 
             <article class="bd-article" role="main">
               
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-camanim">
-<h1>Welcome to CAManim!<a class="headerlink" href="#welcome-to-camanim" title="Permalink to this heading">#</a></h1>
-<p>The CAManim videos are below</p>
-<!-- This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
-
-Check out the content pages bundled with this sample book to see more. -->
-<!-- https://mstruwig.com/posts/jupyterbook-video/ -->
-<!-- <iframe src="_static\CAManim-CRV2023\main.tex" width="256" height="512"></iframe> -->
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="animations_breast_model.html">Breast model CAManim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="animations_densenet_bear.html">DenseNet CAManim - Bear Image</a></li>
-</ul>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="densenet-camanim-bear-image">
+<h1>DenseNet CAManim - Bear Image<a class="headerlink" href="#densenet-camanim-bear-image" title="Permalink to this heading">#</a></h1>
+<section id="ablationcam">
+<h2>AblationCAM<a class="headerlink" href="#ablationcam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\AblationCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\AblationCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="eigencam">
+<h2>EigenCAM<a class="headerlink" href="#eigencam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\EigenCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\EigenCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="eigengradcam">
+<h2>EigenGradCAM<a class="headerlink" href="#eigengradcam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\EigenGradCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\EigenGradCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="gradcam">
+<h2>GradCAM<a class="headerlink" href="#gradcam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\GradCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\GradCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="gradcamelementwise">
+<h2>GradCAMElementWise<a class="headerlink" href="#gradcamelementwise" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\GradCAMElementWise_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\GradCAMElementWise_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="gradcamplusplus">
+<h2>GradCAMPlusPlus<a class="headerlink" href="#gradcamplusplus" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\GradCAMPlusPlus_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\GradCAMPlusPlus_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="hirescam">
+<h2>HiResCAM<a class="headerlink" href="#hirescam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\HiResCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\HiResCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="layercam">
+<h2>LayerCAM<a class="headerlink" href="#layercam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\LayerCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\LayerCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="randomcam">
+<h2>RandomCAM<a class="headerlink" href="#randomcam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\RandomCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\RandomCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="scorecam">
+<h2>ScoreCAM<a class="headerlink" href="#scorecam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\ScoreCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\ScoreCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table>
+</section>
+<section id="xgradcam">
+<h2>XGradCAM<a class="headerlink" href="#xgradcam" title="Permalink to this heading">#</a></h2>
+<table>
+  <tr>
+    <th style="text-align: center">Layer Normalized</th>
+    <th style="text-align: center">Global Normalized</th>
+  </tr>
+  <tr>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\XGradCAM_animlayer.mp4" type="video/mp4">
+        </video>
+    </td>
+    <td>
+        <video width="512" heigh="512" controls>
+            <source src="_static\starCAManim_AllCAMs_OneModel\densenet161\XGradCAM_animglobal.mp4" type="video/mp4">
+        </video>
+    </td>
+  </tr>
+</table></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -497,12 +781,12 @@ Check out the content pages bundled with this sample book to see more. -->
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='right-next' id="next-link" href="animations_breast_model.html" title="next page">
-  <div class="prev-next-info">
-      <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Breast model CAManim</p>
-  </div>
-  <i class="fa-solid fa-angle-right"></i>
+  <a class='left-prev' id="prev-link" href="animations_breast_model.html" title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Breast model CAManim</p>
+      </div>
   </a>
 </div>
             </footer>
@@ -510,6 +794,77 @@ Check out the content pages bundled with this sample book to see more. -->
           </div>
           
           
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ablationcam">
+   AblationCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eigencam">
+   EigenCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eigengradcam">
+   EigenGradCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gradcam">
+   GradCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gradcamelementwise">
+   GradCAMElementWise
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gradcamplusplus">
+   GradCAMPlusPlus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hirescam">
+   HiResCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#layercam">
+   LayerCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#randomcam">
+   RandomCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scorecam">
+   ScoreCAM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#xgradcam">
+   XGradCAM
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+            </div>
           
           
         </div>

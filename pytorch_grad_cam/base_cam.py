@@ -112,6 +112,7 @@ class BaseCAM:
             shutil.rmtree(tmp_dir)
             os.mkdir(tmp_dir)
 
+        print(tmp_dir)
         # EMILY ------------------------------------  
         # Generate & save images/arrays for all layers; save them to tmp_dir
 

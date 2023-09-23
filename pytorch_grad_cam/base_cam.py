@@ -201,16 +201,19 @@ class BaseCAM:
         # normalize img
         if np.max(img) > 1:
             img = np.float32(img) / np.max(img)
+        
         # normalize cam
         mx = np.max(np.concatenate(list(temp_dict.values())))
         mn = np.min(np.concatenate(list(temp_dict.values())))
         for layer_id, cam in temp_dict.items():
-            if norm_type == 'global' or norm_type == 'both':
-                cam = (cam - mn) / (mx - mn)
-                create_image_as_png(img, layer_id, cam, layer_name_map, tmp_dir+'global')
+            # norm_type is 'both' , we normalize laer-wise first, then globally. This ensures that the layer normalization is not affected by the global normalization
             if norm_type == 'layer' or norm_type == 'both':
                 cam = (cam - np.min(cam)) / (np.max(cam) - np.min(cam))
                 create_image_as_png(img, layer_id, cam, layer_name_map, tmp_dir+'layer')
+            if norm_type == 'global' or norm_type == 'both':
+                cam = (cam - mn) / (mx - mn)
+                create_image_as_png(img, layer_id, cam, layer_name_map, tmp_dir+'global')
+            
         
 
         # O(L*nm), n=width, m=height

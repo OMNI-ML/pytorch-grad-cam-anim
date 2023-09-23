@@ -1,4 +1,4 @@
-# CAManim videos
+# Breast model CAManim
 
 <!-- ## AblationCAM
 

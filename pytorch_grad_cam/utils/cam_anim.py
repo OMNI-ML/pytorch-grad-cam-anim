@@ -58,11 +58,17 @@ def _ffmpeg_high_quality(tmp_path, output_fname, frame_rate=5):
     print('ERROR: ffmpeg video generation failed; video corrupt.')
   return None
 
-def create_image_as_png(img, key, val, layer_name_map, norm_type):
+def create_image_as_png(img, key, val, layer_name_map, out_dir):
+
+    if not os.path.exists(out_dir):
+      os.makedirs(out_dir)
+
+    if not out_dir.endswith(os.sep): out_dir += os.sep
+  
     cam_image = show_cam_on_image(img, val[0, :], use_rgb=True)
     fig = plt.figure()
     plt.imshow(cam_image)
     plt.title(layer_name_map[key])
-    fig.savefig(norm_type + os.sep + key + ".png")
+    fig.savefig(out_dir + key + ".png")
     plt.close(fig)
 

@@ -1,3 +1,4 @@
+import os
 import ffmpeg
 import matplotlib.pyplot as plt
 from .image import show_cam_on_image
@@ -62,6 +63,6 @@ def create_image_as_png(img, key, val, layer_name_map, norm_type):
     fig = plt.figure()
     plt.imshow(cam_image)
     plt.title(layer_name_map[key])
-    fig.savefig(norm_type + '_' + key + ".png")
+    fig.savefig(norm_type + os.sep + key + ".png")
     plt.close(fig)
 

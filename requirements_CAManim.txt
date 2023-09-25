@@ -1,0 +1,4 @@
+monai[fire]
+torch
+ffmpeg-python
+memory_profiler

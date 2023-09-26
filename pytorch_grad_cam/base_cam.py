@@ -225,18 +225,18 @@ class BaseCAM:
 
         # generate the animation; automatically saves to file
         if norm_type == 'both':    
-            frames_dir = {"global": tmp_dir+os.sep+'global', "layer": tmp_dir+os.sep+'layer'}
+            frames_dir = {"global": tmp_dir+'global', "layer": tmp_dir+'layer'}
         else: frames_dir = {norm_type: tmp_dir+os.sep+norm_type}
 
         for n_type, fr_dir in frames_dir.items():
             # path semantics
             Path(fr_dir).mkdir(parents=True, exist_ok=True)
-            output_fname = Path(output_fname)
-            output_fname = output_fname.parent / (output_fname.stem + f"_{n_type}" + output_fname.suffix)
-            output_fname = str(output_fname)
+            output_f_rename = Path(output_fname)
+            output_f_rename = output_f_rename.parent / (output_f_rename.stem + f"_{n_type}" + output_f_rename.suffix)
+            output_f_rename = str(output_f_rename)
 
-            if quality =='high': _ffmpeg_high_quality(fr_dir, output_fname, frame_rate=frame_rate)
-            else: _ffmpeg_standard_quality(fr_dir, output_fname, frame_rate=frame_rate)
+            if quality =='high': _ffmpeg_high_quality(fr_dir, output_f_rename, frame_rate=frame_rate)
+            else: _ffmpeg_standard_quality(fr_dir, output_f_rename, frame_rate=frame_rate)
 
         # if we do not keep the individual frames, we remove the tmp_dir & contents
         if not keep_frames: shutil.rmtree(tmp_dir)

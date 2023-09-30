@@ -1,3 +1,6 @@
+
+import time
+import json
 import os
 import glob
 import shutil
@@ -16,8 +19,6 @@ from pytorch_grad_cam.utils.image import scale_cam_image
 from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
 from pytorch_grad_cam.utils.cam_anim import create_image_as_png, _ffmpeg_high_quality, _ffmpeg_standard_quality, count_parameters
 
-import time
-import json
 
 class BaseCAM:
     def __init__(self,
@@ -209,6 +210,11 @@ class BaseCAM:
         for layer_id, cam in temp_dict.items():
             # norm_type is 'both' , we normalize laer-wise first, then globally. This ensures that the layer normalization is not affected by the global normalization
             if norm_type == 'layer' or norm_type == 'both':
+                print(f"layer {layer_id} normalization")
+                print(f"layer {layer_id} max: {np.max(cam)}")
+                print(f"layer {layer_id} min: {np.min(cam)}")
+                print(f"global max: {mx}")
+                print(f"global min: {mn}")
                 layer_cam = (cam - np.min(cam)) / (np.max(cam) - np.min(cam))
                 create_image_as_png(img, layer_id, layer_cam, layer_name_map, tmp_dir+'layer')
             if norm_type == 'global' or norm_type == 'both':

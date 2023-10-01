@@ -19,6 +19,8 @@ from pytorch_grad_cam.utils.image import scale_cam_image
 from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
 from pytorch_grad_cam.utils.cam_anim import create_image_as_png, _ffmpeg_high_quality, _ffmpeg_standard_quality, count_parameters
 
+import gc
+
 
 class BaseCAM:
     def __init__(self,
@@ -91,7 +93,8 @@ class BaseCAM:
             colormap='jet'
 
         """
-        
+        gc.enable()
+
         start = time.time()
         metrics_log = {"n_parameters": count_parameters(self.model), "layers_records": []}
 
@@ -170,6 +173,9 @@ class BaseCAM:
                 count += 1
                 self.activations_and_grads.release()
                 del self.activations_and_grads
+                del cam
+                print(gc.collect())
+                # print(pd.DataFrame.from_records(gc.get_stats()))
 
                 # save layer time
                 layer_end_time = time.time()
@@ -251,6 +257,7 @@ class BaseCAM:
         # with open("sample.json", "w") as outfile:
         #     outfile.write(metrics_log)
 
+        # gc.disable()
 
         return metrics_log
 

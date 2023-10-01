@@ -120,6 +120,9 @@ class BaseCAM:
         count = 0
         layer_name_map = {}
         temp_dict = {}
+        offload_memory_dir = tmp_dir + os.sep + "offload_memory"
+        Path(offload_memory_dir).mkdir(parents=True, exist_ok=True)
+        
         
         # store init parameters
         reset_norm = False
@@ -134,10 +137,6 @@ class BaseCAM:
 
         mx = None
         mn = None
-
-        # n_layers = 0
-        # for layer_name, layer_module in self.model.named_modules():
-        #     n_layers += 1
         layer_names = [layer_name for layer_name, _ in self.model.named_modules()]
         pbar = tqdm(layer_names, desc="Model Layer Loop")
         for layer_name in pbar:
@@ -154,26 +153,19 @@ class BaseCAM:
                 # print(layer, self.target_layers[0])
                 cam = self.__call__(input_tensor=img_tensor, targets=None) # for now targets was always None...
 
-                # get global max value
-                # if mx is None:
-                #     mx = np.max(cam)
-                # else:
-                #     layer_mx = np.max(cam)
-                #     if mx < layer_mx:
-                #         mx = layer_mx
+                # get global max/min
+                if mx is None or mx < np.max(cam):
+                    mx = np.max(cam)
+                if mn is None or mn > np.min(cam):
+                    mn = np.min(cam)
                 
-                # # get global max value
-                # if mn is None:
-                #     mn = np.min(cam)
-                # else:
-                #     layer_mn = np.min(cam)
-                #     if mn > layer_mn:
-                #         mn = layer_mn
-                
-                # TODO: save unnormalized cam to file instead of storing to temp_dict?
+                # store cam as pickle file to offload memory
+                filepath = offload_memory_dir + os.sep + str("%06d"%count) + ".pkl"
+                with open(filepath, 'wb') as f:
+                    pickle.dump(cam, f)
 
-                # store cam to temp_dict
-                temp_dict[str("%06d"%count)] = cam
+                # store filepath to temp_dict
+                temp_dict[str("%06d"%count)] = filepath
                 layer_name_map[str("%06d"%count)] = layer_name
                 count += 1
                 self.activations_and_grads.release()
@@ -205,9 +197,12 @@ class BaseCAM:
             img = np.float32(img) / np.max(img)
         
         # normalize cam
-        mx = np.max(np.concatenate(list(temp_dict.values())))
-        mn = np.min(np.concatenate(list(temp_dict.values())))
-        for layer_id, cam in temp_dict.items():
+        # mx = np.max(np.concatenate(list(temp_dict.values())))
+        # mn = np.min(np.concatenate(list(temp_dict.values())))
+        for layer_id, cam_pkl in temp_dict.items():
+            # load cam from pickle file
+            with open(cam_pkl, 'rb') as f:
+                cam = pickle.load(f)
             # norm_type is 'both' , we normalize laer-wise first, then globally. This ensures that the layer normalization is not affected by the global normalization
             if norm_type == 'layer' or norm_type == 'both':
                 print(f"layer {layer_id} normalization")

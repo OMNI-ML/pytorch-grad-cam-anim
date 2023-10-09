@@ -1,0 +1,3352 @@
+[
+    {
+        "model_name": "MedNIST_DenseNet121(growth_rate:16)",
+        "CAM Name": "HiResCAM",
+        "error": null,
+        "n_parameters": 1818646,
+        "layers_records": [
+            {
+                "layer_name": "",
+                "layer_id": "000000",
+                "error": "'DenseNet121' object has no attribute ''"
+            },
+            {
+                "layer_name": "features",
+                "layer_id": "000000",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 1815544
+            },
+            {
+                "layer_name": "features.conv0",
+                "layer_id": "000000",
+                "error": null,
+                "layer_num_parameters": 3136,
+                "layer_time": 1.644641637802124
+            },
+            {
+                "layer_name": "features.norm0",
+                "layer_id": "000001",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.relu0",
+                "layer_id": "000001",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 1.56406831741333
+            },
+            {
+                "layer_name": "features.pool0",
+                "layer_id": "000002",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 1.7712984085083008
+            },
+            {
+                "layer_name": "features.denseblock1",
+                "layer_id": "000003",
+                "error": null,
+                "layer_num_parameters": 97248,
+                "layer_time": 1.8246495723724365
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer1",
+                "layer_id": "000004",
+                "error": null,
+                "layer_num_parameters": 13568,
+                "layer_time": 3.599757194519043
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer1.layers",
+                "layer_id": "000005",
+                "error": null,
+                "layer_num_parameters": 13568,
+                "layer_time": 3.9011876583099365
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer1.layers.norm1",
+                "layer_id": "000006",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer1.layers.relu1",
+                "layer_id": "000006",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 2.394137144088745
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer1.layers.conv1",
+                "layer_id": "000007",
+                "error": null,
+                "layer_num_parameters": 4096,
+                "layer_time": 2.2311148643493652
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer1.layers.norm2",
+                "layer_id": "000008",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer1.layers.relu2",
+                "layer_id": "000008",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 2.3288116455078125
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer1.layers.conv2",
+                "layer_id": "000009",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 2.1995022296905518
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer2",
+                "layer_id": "000010",
+                "error": null,
+                "layer_num_parameters": 14624,
+                "layer_time": 3.6184170246124268
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer2.layers",
+                "layer_id": "000011",
+                "error": null,
+                "layer_num_parameters": 14624,
+                "layer_time": 2.499455213546753
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer2.layers.norm1",
+                "layer_id": "000012",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 160
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer2.layers.relu1",
+                "layer_id": "000012",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.9564542770385742
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer2.layers.conv1",
+                "layer_id": "000013",
+                "error": null,
+                "layer_num_parameters": 5120,
+                "layer_time": 1.2139921188354492
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer2.layers.norm2",
+                "layer_id": "000014",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer2.layers.relu2",
+                "layer_id": "000014",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.9710202217102051
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer2.layers.conv2",
+                "layer_id": "000015",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 1.1352603435516357
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer3",
+                "layer_id": "000016",
+                "error": null,
+                "layer_num_parameters": 15680,
+                "layer_time": 0.9169704914093018
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer3.layers",
+                "layer_id": "000017",
+                "error": null,
+                "layer_num_parameters": 15680,
+                "layer_time": 0.6105971336364746
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer3.layers.norm1",
+                "layer_id": "000018",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 192
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer3.layers.relu1",
+                "layer_id": "000018",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.547910213470459
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer3.layers.conv1",
+                "layer_id": "000019",
+                "error": null,
+                "layer_num_parameters": 6144,
+                "layer_time": 1.0534522533416748
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer3.layers.norm2",
+                "layer_id": "000020",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer3.layers.relu2",
+                "layer_id": "000020",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 1.0852882862091064
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer3.layers.conv2",
+                "layer_id": "000021",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 1.3960247039794922
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer4",
+                "layer_id": "000022",
+                "error": null,
+                "layer_num_parameters": 16736,
+                "layer_time": 0.8104348182678223
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer4.layers",
+                "layer_id": "000023",
+                "error": null,
+                "layer_num_parameters": 16736,
+                "layer_time": 0.4563479423522949
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer4.layers.norm1",
+                "layer_id": "000024",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 224
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer4.layers.relu1",
+                "layer_id": "000024",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4731135368347168
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer4.layers.conv1",
+                "layer_id": "000025",
+                "error": null,
+                "layer_num_parameters": 7168,
+                "layer_time": 0.4707920551300049
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer4.layers.norm2",
+                "layer_id": "000026",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer4.layers.relu2",
+                "layer_id": "000026",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4886209964752197
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer4.layers.conv2",
+                "layer_id": "000027",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4435408115386963
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer5",
+                "layer_id": "000028",
+                "error": null,
+                "layer_num_parameters": 17792,
+                "layer_time": 0.37045907974243164
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer5.layers",
+                "layer_id": "000029",
+                "error": null,
+                "layer_num_parameters": 17792,
+                "layer_time": 0.3590278625488281
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer5.layers.norm1",
+                "layer_id": "000030",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 256
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer5.layers.relu1",
+                "layer_id": "000030",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.36558961868286133
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer5.layers.conv1",
+                "layer_id": "000031",
+                "error": null,
+                "layer_num_parameters": 8192,
+                "layer_time": 0.36806321144104004
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer5.layers.norm2",
+                "layer_id": "000032",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer5.layers.relu2",
+                "layer_id": "000032",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3756437301635742
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer5.layers.conv2",
+                "layer_id": "000033",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.36682653427124023
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer6",
+                "layer_id": "000034",
+                "error": null,
+                "layer_num_parameters": 18848,
+                "layer_time": 0.3644084930419922
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer6.layers",
+                "layer_id": "000035",
+                "error": null,
+                "layer_num_parameters": 18848,
+                "layer_time": 0.3736088275909424
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer6.layers.norm1",
+                "layer_id": "000036",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 288
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer6.layers.relu1",
+                "layer_id": "000036",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4407172203063965
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer6.layers.conv1",
+                "layer_id": "000037",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3555715084075928
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer6.layers.norm2",
+                "layer_id": "000038",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer6.layers.relu2",
+                "layer_id": "000038",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3742234706878662
+            },
+            {
+                "layer_name": "features.denseblock1.denselayer6.layers.conv2",
+                "layer_id": "000039",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3647446632385254
+            },
+            {
+                "layer_name": "features.transition1",
+                "layer_id": "000040",
+                "error": null,
+                "layer_num_parameters": 13120,
+                "layer_time": 0.3603932857513428
+            },
+            {
+                "layer_name": "features.transition1.norm",
+                "layer_id": "000041",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 320
+            },
+            {
+                "layer_name": "features.transition1.relu",
+                "layer_id": "000041",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.35407161712646484
+            },
+            {
+                "layer_name": "features.transition1.conv",
+                "layer_id": "000042",
+                "error": null,
+                "layer_num_parameters": 12800,
+                "layer_time": 0.360823392868042
+            },
+            {
+                "layer_name": "features.transition1.pool",
+                "layer_id": "000043",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3597991466522217
+            },
+            {
+                "layer_name": "features.denseblock2",
+                "layer_id": "000044",
+                "error": null,
+                "layer_num_parameters": 245184,
+                "layer_time": 0.3502776622772217
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer1",
+                "layer_id": "000045",
+                "error": null,
+                "layer_num_parameters": 14624,
+                "layer_time": 0.3570716381072998
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer1.layers",
+                "layer_id": "000046",
+                "error": null,
+                "layer_num_parameters": 14624,
+                "layer_time": 0.35655784606933594
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer1.layers.norm1",
+                "layer_id": "000047",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 160
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer1.layers.relu1",
+                "layer_id": "000047",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.35752010345458984
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer1.layers.conv1",
+                "layer_id": "000048",
+                "error": null,
+                "layer_num_parameters": 5120,
+                "layer_time": 0.34498119354248047
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer1.layers.norm2",
+                "layer_id": "000049",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer1.layers.relu2",
+                "layer_id": "000049",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3746974468231201
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer1.layers.conv2",
+                "layer_id": "000050",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.38016796112060547
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer2",
+                "layer_id": "000051",
+                "error": null,
+                "layer_num_parameters": 15680,
+                "layer_time": 0.37288737297058105
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer2.layers",
+                "layer_id": "000052",
+                "error": null,
+                "layer_num_parameters": 15680,
+                "layer_time": 0.4609830379486084
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer2.layers.norm1",
+                "layer_id": "000053",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 192
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer2.layers.relu1",
+                "layer_id": "000053",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.47667384147644043
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer2.layers.conv1",
+                "layer_id": "000054",
+                "error": null,
+                "layer_num_parameters": 6144,
+                "layer_time": 0.47552061080932617
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer2.layers.norm2",
+                "layer_id": "000055",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer2.layers.relu2",
+                "layer_id": "000055",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4628117084503174
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer2.layers.conv2",
+                "layer_id": "000056",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.49289608001708984
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer3",
+                "layer_id": "000057",
+                "error": null,
+                "layer_num_parameters": 16736,
+                "layer_time": 0.46095705032348633
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer3.layers",
+                "layer_id": "000058",
+                "error": null,
+                "layer_num_parameters": 16736,
+                "layer_time": 0.48256492614746094
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer3.layers.norm1",
+                "layer_id": "000059",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 224
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer3.layers.relu1",
+                "layer_id": "000059",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5113217830657959
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer3.layers.conv1",
+                "layer_id": "000060",
+                "error": null,
+                "layer_num_parameters": 7168,
+                "layer_time": 0.43911051750183105
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer3.layers.norm2",
+                "layer_id": "000061",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer3.layers.relu2",
+                "layer_id": "000061",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3769838809967041
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer3.layers.conv2",
+                "layer_id": "000062",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.38231539726257324
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer4",
+                "layer_id": "000063",
+                "error": null,
+                "layer_num_parameters": 17792,
+                "layer_time": 0.36919593811035156
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer4.layers",
+                "layer_id": "000064",
+                "error": null,
+                "layer_num_parameters": 17792,
+                "layer_time": 0.3729560375213623
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer4.layers.norm1",
+                "layer_id": "000065",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 256
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer4.layers.relu1",
+                "layer_id": "000065",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.37102270126342773
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer4.layers.conv1",
+                "layer_id": "000066",
+                "error": null,
+                "layer_num_parameters": 8192,
+                "layer_time": 0.36812543869018555
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer4.layers.norm2",
+                "layer_id": "000067",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer4.layers.relu2",
+                "layer_id": "000067",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3883528709411621
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer4.layers.conv2",
+                "layer_id": "000068",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.37076854705810547
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer5",
+                "layer_id": "000069",
+                "error": null,
+                "layer_num_parameters": 18848,
+                "layer_time": 0.37799811363220215
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer5.layers",
+                "layer_id": "000070",
+                "error": null,
+                "layer_num_parameters": 18848,
+                "layer_time": 0.3780839443206787
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer5.layers.norm1",
+                "layer_id": "000071",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 288
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer5.layers.relu1",
+                "layer_id": "000071",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.37779784202575684
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer5.layers.conv1",
+                "layer_id": "000072",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3935420513153076
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer5.layers.norm2",
+                "layer_id": "000073",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer5.layers.relu2",
+                "layer_id": "000073",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.37098240852355957
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer5.layers.conv2",
+                "layer_id": "000074",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3669712543487549
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer6",
+                "layer_id": "000075",
+                "error": null,
+                "layer_num_parameters": 19904,
+                "layer_time": 0.38292741775512695
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer6.layers",
+                "layer_id": "000076",
+                "error": null,
+                "layer_num_parameters": 19904,
+                "layer_time": 0.3813178539276123
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer6.layers.norm1",
+                "layer_id": "000077",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 320
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer6.layers.relu1",
+                "layer_id": "000077",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3804488182067871
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer6.layers.conv1",
+                "layer_id": "000078",
+                "error": null,
+                "layer_num_parameters": 10240,
+                "layer_time": 0.3817875385284424
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer6.layers.norm2",
+                "layer_id": "000079",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer6.layers.relu2",
+                "layer_id": "000079",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3823821544647217
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer6.layers.conv2",
+                "layer_id": "000080",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.40230345726013184
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer7",
+                "layer_id": "000081",
+                "error": null,
+                "layer_num_parameters": 20960,
+                "layer_time": 0.38031578063964844
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer7.layers",
+                "layer_id": "000082",
+                "error": null,
+                "layer_num_parameters": 20960,
+                "layer_time": 0.3797626495361328
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer7.layers.norm1",
+                "layer_id": "000083",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 352
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer7.layers.relu1",
+                "layer_id": "000083",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3905973434448242
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer7.layers.conv1",
+                "layer_id": "000084",
+                "error": null,
+                "layer_num_parameters": 11264,
+                "layer_time": 0.48177504539489746
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer7.layers.norm2",
+                "layer_id": "000085",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer7.layers.relu2",
+                "layer_id": "000085",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.493091344833374
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer7.layers.conv2",
+                "layer_id": "000086",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4787595272064209
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer8",
+                "layer_id": "000087",
+                "error": null,
+                "layer_num_parameters": 22016,
+                "layer_time": 0.6880369186401367
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer8.layers",
+                "layer_id": "000088",
+                "error": null,
+                "layer_num_parameters": 22016,
+                "layer_time": 0.4934558868408203
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer8.layers.norm1",
+                "layer_id": "000089",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 384
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer8.layers.relu1",
+                "layer_id": "000089",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5076754093170166
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer8.layers.conv1",
+                "layer_id": "000090",
+                "error": null,
+                "layer_num_parameters": 12288,
+                "layer_time": 0.4957602024078369
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer8.layers.norm2",
+                "layer_id": "000091",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer8.layers.relu2",
+                "layer_id": "000091",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.46216297149658203
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer8.layers.conv2",
+                "layer_id": "000092",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.373337984085083
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer9",
+                "layer_id": "000093",
+                "error": null,
+                "layer_num_parameters": 23072,
+                "layer_time": 0.3778107166290283
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer9.layers",
+                "layer_id": "000094",
+                "error": null,
+                "layer_num_parameters": 23072,
+                "layer_time": 0.389585018157959
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer9.layers.norm1",
+                "layer_id": "000095",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 416
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer9.layers.relu1",
+                "layer_id": "000095",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3875722885131836
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer9.layers.conv1",
+                "layer_id": "000096",
+                "error": null,
+                "layer_num_parameters": 13312,
+                "layer_time": 0.3828904628753662
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer9.layers.norm2",
+                "layer_id": "000097",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer9.layers.relu2",
+                "layer_id": "000097",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3807187080383301
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer9.layers.conv2",
+                "layer_id": "000098",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3884258270263672
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer10",
+                "layer_id": "000099",
+                "error": null,
+                "layer_num_parameters": 24128,
+                "layer_time": 0.373582124710083
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer10.layers",
+                "layer_id": "000100",
+                "error": null,
+                "layer_num_parameters": 24128,
+                "layer_time": 0.36420154571533203
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer10.layers.norm1",
+                "layer_id": "000101",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 448
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer10.layers.relu1",
+                "layer_id": "000101",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.38234996795654297
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer10.layers.conv1",
+                "layer_id": "000102",
+                "error": null,
+                "layer_num_parameters": 14336,
+                "layer_time": 0.3808436393737793
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer10.layers.norm2",
+                "layer_id": "000103",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer10.layers.relu2",
+                "layer_id": "000103",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3841676712036133
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer10.layers.conv2",
+                "layer_id": "000104",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.38576221466064453
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer11",
+                "layer_id": "000105",
+                "error": null,
+                "layer_num_parameters": 25184,
+                "layer_time": 0.404818058013916
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer11.layers",
+                "layer_id": "000106",
+                "error": null,
+                "layer_num_parameters": 25184,
+                "layer_time": 0.40158510208129883
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer11.layers.norm1",
+                "layer_id": "000107",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 480
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer11.layers.relu1",
+                "layer_id": "000107",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.39021968841552734
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer11.layers.conv1",
+                "layer_id": "000108",
+                "error": null,
+                "layer_num_parameters": 15360,
+                "layer_time": 0.3901357650756836
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer11.layers.norm2",
+                "layer_id": "000109",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer11.layers.relu2",
+                "layer_id": "000109",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3805572986602783
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer11.layers.conv2",
+                "layer_id": "000110",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3773970603942871
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer12",
+                "layer_id": "000111",
+                "error": null,
+                "layer_num_parameters": 26240,
+                "layer_time": 0.387829065322876
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer12.layers",
+                "layer_id": "000112",
+                "error": null,
+                "layer_num_parameters": 26240,
+                "layer_time": 0.38575172424316406
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer12.layers.norm1",
+                "layer_id": "000113",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 512
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer12.layers.relu1",
+                "layer_id": "000113",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3954780101776123
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer12.layers.conv1",
+                "layer_id": "000114",
+                "error": null,
+                "layer_num_parameters": 16384,
+                "layer_time": 0.388660192489624
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer12.layers.norm2",
+                "layer_id": "000115",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer12.layers.relu2",
+                "layer_id": "000115",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.48407816886901855
+            },
+            {
+                "layer_name": "features.denseblock2.denselayer12.layers.conv2",
+                "layer_id": "000116",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.5244235992431641
+            },
+            {
+                "layer_name": "features.transition2",
+                "layer_id": "000117",
+                "error": null,
+                "layer_num_parameters": 37536,
+                "layer_time": 0.5259506702423096
+            },
+            {
+                "layer_name": "features.transition2.norm",
+                "layer_id": "000118",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 544
+            },
+            {
+                "layer_name": "features.transition2.relu",
+                "layer_id": "000118",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.506598711013794
+            },
+            {
+                "layer_name": "features.transition2.conv",
+                "layer_id": "000119",
+                "error": null,
+                "layer_num_parameters": 36992,
+                "layer_time": 0.49591803550720215
+            },
+            {
+                "layer_name": "features.transition2.pool",
+                "layer_id": "000120",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.510338544845581
+            },
+            {
+                "layer_name": "features.denseblock3",
+                "layer_id": "000121",
+                "error": null,
+                "layer_num_parameters": 731136,
+                "layer_time": 0.5474355220794678
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer1",
+                "layer_id": "000122",
+                "error": null,
+                "layer_num_parameters": 18320,
+                "layer_time": 0.5146534442901611
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer1.layers",
+                "layer_id": "000123",
+                "error": null,
+                "layer_num_parameters": 18320,
+                "layer_time": 0.391704797744751
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer1.layers.norm1",
+                "layer_id": "000124",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 272
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer1.layers.relu1",
+                "layer_id": "000124",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.39238500595092773
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer1.layers.conv1",
+                "layer_id": "000125",
+                "error": null,
+                "layer_num_parameters": 8704,
+                "layer_time": 0.37606239318847656
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer1.layers.norm2",
+                "layer_id": "000126",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer1.layers.relu2",
+                "layer_id": "000126",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.40476107597351074
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer1.layers.conv2",
+                "layer_id": "000127",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.40775465965270996
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer2",
+                "layer_id": "000128",
+                "error": null,
+                "layer_num_parameters": 19376,
+                "layer_time": 0.3842630386352539
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer2.layers",
+                "layer_id": "000129",
+                "error": null,
+                "layer_num_parameters": 19376,
+                "layer_time": 0.38826799392700195
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer2.layers.norm1",
+                "layer_id": "000130",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 304
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer2.layers.relu1",
+                "layer_id": "000130",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3919384479522705
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer2.layers.conv1",
+                "layer_id": "000131",
+                "error": null,
+                "layer_num_parameters": 9728,
+                "layer_time": 0.40631794929504395
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer2.layers.norm2",
+                "layer_id": "000132",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer2.layers.relu2",
+                "layer_id": "000132",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.39881420135498047
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer2.layers.conv2",
+                "layer_id": "000133",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.38947629928588867
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer3",
+                "layer_id": "000134",
+                "error": null,
+                "layer_num_parameters": 20432,
+                "layer_time": 0.4028337001800537
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer3.layers",
+                "layer_id": "000135",
+                "error": null,
+                "layer_num_parameters": 20432,
+                "layer_time": 0.3999300003051758
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer3.layers.norm1",
+                "layer_id": "000136",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 336
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer3.layers.relu1",
+                "layer_id": "000136",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.47984814643859863
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer3.layers.conv1",
+                "layer_id": "000137",
+                "error": null,
+                "layer_num_parameters": 10752,
+                "layer_time": 0.3905823230743408
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer3.layers.norm2",
+                "layer_id": "000138",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer3.layers.relu2",
+                "layer_id": "000138",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4002819061279297
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer3.layers.conv2",
+                "layer_id": "000139",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3814265727996826
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer4",
+                "layer_id": "000140",
+                "error": null,
+                "layer_num_parameters": 21488,
+                "layer_time": 0.38900017738342285
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer4.layers",
+                "layer_id": "000141",
+                "error": null,
+                "layer_num_parameters": 21488,
+                "layer_time": 0.4210948944091797
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer4.layers.norm1",
+                "layer_id": "000142",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 368
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer4.layers.relu1",
+                "layer_id": "000142",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3788576126098633
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer4.layers.conv1",
+                "layer_id": "000143",
+                "error": null,
+                "layer_num_parameters": 11776,
+                "layer_time": 0.3802628517150879
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer4.layers.norm2",
+                "layer_id": "000144",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer4.layers.relu2",
+                "layer_id": "000144",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.40690040588378906
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer4.layers.conv2",
+                "layer_id": "000145",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4613966941833496
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer5",
+                "layer_id": "000146",
+                "error": null,
+                "layer_num_parameters": 22544,
+                "layer_time": 0.5046360492706299
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer5.layers",
+                "layer_id": "000147",
+                "error": null,
+                "layer_num_parameters": 22544,
+                "layer_time": 0.5137028694152832
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer5.layers.norm1",
+                "layer_id": "000148",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 400
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer5.layers.relu1",
+                "layer_id": "000148",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.6175143718719482
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer5.layers.conv1",
+                "layer_id": "000149",
+                "error": null,
+                "layer_num_parameters": 12800,
+                "layer_time": 0.5992064476013184
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer5.layers.norm2",
+                "layer_id": "000150",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer5.layers.relu2",
+                "layer_id": "000150",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5325098037719727
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer5.layers.conv2",
+                "layer_id": "000151",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.5065808296203613
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer6",
+                "layer_id": "000152",
+                "error": null,
+                "layer_num_parameters": 23600,
+                "layer_time": 0.5127277374267578
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer6.layers",
+                "layer_id": "000153",
+                "error": null,
+                "layer_num_parameters": 23600,
+                "layer_time": 0.5229089260101318
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer6.layers.norm1",
+                "layer_id": "000154",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 432
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer6.layers.relu1",
+                "layer_id": "000154",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.38925647735595703
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer6.layers.conv1",
+                "layer_id": "000155",
+                "error": null,
+                "layer_num_parameters": 13824,
+                "layer_time": 0.3959193229675293
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer6.layers.norm2",
+                "layer_id": "000156",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer6.layers.relu2",
+                "layer_id": "000156",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4025142192840576
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer6.layers.conv2",
+                "layer_id": "000157",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4253866672515869
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer7",
+                "layer_id": "000158",
+                "error": null,
+                "layer_num_parameters": 24656,
+                "layer_time": 0.4048004150390625
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer7.layers",
+                "layer_id": "000159",
+                "error": null,
+                "layer_num_parameters": 24656,
+                "layer_time": 0.4079303741455078
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer7.layers.norm1",
+                "layer_id": "000160",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 464
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer7.layers.relu1",
+                "layer_id": "000160",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.39995598793029785
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer7.layers.conv1",
+                "layer_id": "000161",
+                "error": null,
+                "layer_num_parameters": 14848,
+                "layer_time": 0.4121062755584717
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer7.layers.norm2",
+                "layer_id": "000162",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer7.layers.relu2",
+                "layer_id": "000162",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4033491611480713
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer7.layers.conv2",
+                "layer_id": "000163",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3893470764160156
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer8",
+                "layer_id": "000164",
+                "error": null,
+                "layer_num_parameters": 25712,
+                "layer_time": 0.4063575267791748
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer8.layers",
+                "layer_id": "000165",
+                "error": null,
+                "layer_num_parameters": 25712,
+                "layer_time": 0.3970022201538086
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer8.layers.norm1",
+                "layer_id": "000166",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 496
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer8.layers.relu1",
+                "layer_id": "000166",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.40677690505981445
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer8.layers.conv1",
+                "layer_id": "000167",
+                "error": null,
+                "layer_num_parameters": 15872,
+                "layer_time": 0.39810967445373535
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer8.layers.norm2",
+                "layer_id": "000168",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer8.layers.relu2",
+                "layer_id": "000168",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.40004873275756836
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer8.layers.conv2",
+                "layer_id": "000169",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4283597469329834
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer9",
+                "layer_id": "000170",
+                "error": null,
+                "layer_num_parameters": 26768,
+                "layer_time": 0.4279196262359619
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer9.layers",
+                "layer_id": "000171",
+                "error": null,
+                "layer_num_parameters": 26768,
+                "layer_time": 0.417356014251709
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer9.layers.norm1",
+                "layer_id": "000172",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 528
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer9.layers.relu1",
+                "layer_id": "000172",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4228479862213135
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer9.layers.conv1",
+                "layer_id": "000173",
+                "error": null,
+                "layer_num_parameters": 16896,
+                "layer_time": 0.412384033203125
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer9.layers.norm2",
+                "layer_id": "000174",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer9.layers.relu2",
+                "layer_id": "000174",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.41785597801208496
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer9.layers.conv2",
+                "layer_id": "000175",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.48152756690979004
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer10",
+                "layer_id": "000176",
+                "error": null,
+                "layer_num_parameters": 27824,
+                "layer_time": 0.5467629432678223
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer10.layers",
+                "layer_id": "000177",
+                "error": null,
+                "layer_num_parameters": 27824,
+                "layer_time": 0.5388991832733154
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer10.layers.norm1",
+                "layer_id": "000178",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 560
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer10.layers.relu1",
+                "layer_id": "000178",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5859575271606445
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer10.layers.conv1",
+                "layer_id": "000179",
+                "error": null,
+                "layer_num_parameters": 17920,
+                "layer_time": 0.5445621013641357
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer10.layers.norm2",
+                "layer_id": "000180",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer10.layers.relu2",
+                "layer_id": "000180",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5421712398529053
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer10.layers.conv2",
+                "layer_id": "000181",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.5254244804382324
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer11",
+                "layer_id": "000182",
+                "error": null,
+                "layer_num_parameters": 28880,
+                "layer_time": 0.9900884628295898
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer11.layers",
+                "layer_id": "000183",
+                "error": null,
+                "layer_num_parameters": 28880,
+                "layer_time": 0.41553831100463867
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer11.layers.norm1",
+                "layer_id": "000184",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 592
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer11.layers.relu1",
+                "layer_id": "000184",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5483412742614746
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer11.layers.conv1",
+                "layer_id": "000185",
+                "error": null,
+                "layer_num_parameters": 18944,
+                "layer_time": 0.7129456996917725
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer11.layers.norm2",
+                "layer_id": "000186",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer11.layers.relu2",
+                "layer_id": "000186",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4505650997161865
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer11.layers.conv2",
+                "layer_id": "000187",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.40413761138916016
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer12",
+                "layer_id": "000188",
+                "error": null,
+                "layer_num_parameters": 29936,
+                "layer_time": 0.4043762683868408
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer12.layers",
+                "layer_id": "000189",
+                "error": null,
+                "layer_num_parameters": 29936,
+                "layer_time": 0.4076211452484131
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer12.layers.norm1",
+                "layer_id": "000190",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 624
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer12.layers.relu1",
+                "layer_id": "000190",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3993499279022217
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer12.layers.conv1",
+                "layer_id": "000191",
+                "error": null,
+                "layer_num_parameters": 19968,
+                "layer_time": 0.4055137634277344
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer12.layers.norm2",
+                "layer_id": "000192",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer12.layers.relu2",
+                "layer_id": "000192",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.40604496002197266
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer12.layers.conv2",
+                "layer_id": "000193",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.3932945728302002
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer13",
+                "layer_id": "000194",
+                "error": null,
+                "layer_num_parameters": 30992,
+                "layer_time": 0.4039900302886963
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer13.layers",
+                "layer_id": "000195",
+                "error": null,
+                "layer_num_parameters": 30992,
+                "layer_time": 0.4070291519165039
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer13.layers.norm1",
+                "layer_id": "000196",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 656
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer13.layers.relu1",
+                "layer_id": "000196",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.41437768936157227
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer13.layers.conv1",
+                "layer_id": "000197",
+                "error": null,
+                "layer_num_parameters": 20992,
+                "layer_time": 0.40651631355285645
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer13.layers.norm2",
+                "layer_id": "000198",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer13.layers.relu2",
+                "layer_id": "000198",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.3959083557128906
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer13.layers.conv2",
+                "layer_id": "000199",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.40996289253234863
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer14",
+                "layer_id": "000200",
+                "error": null,
+                "layer_num_parameters": 32048,
+                "layer_time": 0.40767765045166016
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer14.layers",
+                "layer_id": "000201",
+                "error": null,
+                "layer_num_parameters": 32048,
+                "layer_time": 0.41158175468444824
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer14.layers.norm1",
+                "layer_id": "000202",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 688
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer14.layers.relu1",
+                "layer_id": "000202",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.40085673332214355
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer14.layers.conv1",
+                "layer_id": "000203",
+                "error": null,
+                "layer_num_parameters": 22016,
+                "layer_time": 0.5601553916931152
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer14.layers.norm2",
+                "layer_id": "000204",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer14.layers.relu2",
+                "layer_id": "000204",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5458948612213135
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer14.layers.conv2",
+                "layer_id": "000205",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.5075411796569824
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer15",
+                "layer_id": "000206",
+                "error": null,
+                "layer_num_parameters": 33104,
+                "layer_time": 0.5117006301879883
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer15.layers",
+                "layer_id": "000207",
+                "error": null,
+                "layer_num_parameters": 33104,
+                "layer_time": 0.5397131443023682
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer15.layers.norm1",
+                "layer_id": "000208",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 720
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer15.layers.relu1",
+                "layer_id": "000208",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5349118709564209
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer15.layers.conv1",
+                "layer_id": "000209",
+                "error": null,
+                "layer_num_parameters": 23040,
+                "layer_time": 0.5383470058441162
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer15.layers.norm2",
+                "layer_id": "000210",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer15.layers.relu2",
+                "layer_id": "000210",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4803156852722168
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer15.layers.conv2",
+                "layer_id": "000211",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.40995192527770996
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer16",
+                "layer_id": "000212",
+                "error": null,
+                "layer_num_parameters": 34160,
+                "layer_time": 0.42180871963500977
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer16.layers",
+                "layer_id": "000213",
+                "error": null,
+                "layer_num_parameters": 34160,
+                "layer_time": 0.4116811752319336
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer16.layers.norm1",
+                "layer_id": "000214",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 752
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer16.layers.relu1",
+                "layer_id": "000214",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.40841078758239746
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer16.layers.conv1",
+                "layer_id": "000215",
+                "error": null,
+                "layer_num_parameters": 24064,
+                "layer_time": 0.41156983375549316
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer16.layers.norm2",
+                "layer_id": "000216",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer16.layers.relu2",
+                "layer_id": "000216",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.41678380966186523
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer16.layers.conv2",
+                "layer_id": "000217",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.41898679733276367
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer17",
+                "layer_id": "000218",
+                "error": null,
+                "layer_num_parameters": 35216,
+                "layer_time": 0.40555763244628906
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer17.layers",
+                "layer_id": "000219",
+                "error": null,
+                "layer_num_parameters": 35216,
+                "layer_time": 0.4096832275390625
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer17.layers.norm1",
+                "layer_id": "000220",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 784
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer17.layers.relu1",
+                "layer_id": "000220",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.42066240310668945
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer17.layers.conv1",
+                "layer_id": "000221",
+                "error": null,
+                "layer_num_parameters": 25088,
+                "layer_time": 0.40856242179870605
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer17.layers.norm2",
+                "layer_id": "000222",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer17.layers.relu2",
+                "layer_id": "000222",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4174227714538574
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer17.layers.conv2",
+                "layer_id": "000223",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4026508331298828
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer18",
+                "layer_id": "000224",
+                "error": null,
+                "layer_num_parameters": 36272,
+                "layer_time": 0.4180257320404053
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer18.layers",
+                "layer_id": "000225",
+                "error": null,
+                "layer_num_parameters": 36272,
+                "layer_time": 0.4067394733428955
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer18.layers.norm1",
+                "layer_id": "000226",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 816
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer18.layers.relu1",
+                "layer_id": "000226",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.42219018936157227
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer18.layers.conv1",
+                "layer_id": "000227",
+                "error": null,
+                "layer_num_parameters": 26112,
+                "layer_time": 0.41649341583251953
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer18.layers.norm2",
+                "layer_id": "000228",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer18.layers.relu2",
+                "layer_id": "000228",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4313385486602783
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer18.layers.conv2",
+                "layer_id": "000229",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.41658854484558105
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer19",
+                "layer_id": "000230",
+                "error": null,
+                "layer_num_parameters": 37328,
+                "layer_time": 0.4268817901611328
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer19.layers",
+                "layer_id": "000231",
+                "error": null,
+                "layer_num_parameters": 37328,
+                "layer_time": 0.41834545135498047
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer19.layers.norm1",
+                "layer_id": "000232",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 848
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer19.layers.relu1",
+                "layer_id": "000232",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5683107376098633
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer19.layers.conv1",
+                "layer_id": "000233",
+                "error": null,
+                "layer_num_parameters": 27136,
+                "layer_time": 0.5251400470733643
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer19.layers.norm2",
+                "layer_id": "000234",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer19.layers.relu2",
+                "layer_id": "000234",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.546579122543335
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer19.layers.conv2",
+                "layer_id": "000235",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.5229246616363525
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer20",
+                "layer_id": "000236",
+                "error": null,
+                "layer_num_parameters": 38384,
+                "layer_time": 0.5290625095367432
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer20.layers",
+                "layer_id": "000237",
+                "error": null,
+                "layer_num_parameters": 38384,
+                "layer_time": 1.4029834270477295
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer20.layers.norm1",
+                "layer_id": "000238",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 880
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer20.layers.relu1",
+                "layer_id": "000238",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.47870826721191406
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer20.layers.conv1",
+                "layer_id": "000239",
+                "error": null,
+                "layer_num_parameters": 28160,
+                "layer_time": 0.4126608371734619
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer20.layers.norm2",
+                "layer_id": "000240",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer20.layers.relu2",
+                "layer_id": "000240",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4253978729248047
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer20.layers.conv2",
+                "layer_id": "000241",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.41670918464660645
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer21",
+                "layer_id": "000242",
+                "error": null,
+                "layer_num_parameters": 39440,
+                "layer_time": 0.4219791889190674
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer21.layers",
+                "layer_id": "000243",
+                "error": null,
+                "layer_num_parameters": 39440,
+                "layer_time": 0.412078857421875
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer21.layers.norm1",
+                "layer_id": "000244",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 912
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer21.layers.relu1",
+                "layer_id": "000244",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4192774295806885
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer21.layers.conv1",
+                "layer_id": "000245",
+                "error": null,
+                "layer_num_parameters": 29184,
+                "layer_time": 0.42618322372436523
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer21.layers.norm2",
+                "layer_id": "000246",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer21.layers.relu2",
+                "layer_id": "000246",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4429037570953369
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer21.layers.conv2",
+                "layer_id": "000247",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4079246520996094
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer22",
+                "layer_id": "000248",
+                "error": null,
+                "layer_num_parameters": 40496,
+                "layer_time": 0.4577150344848633
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer22.layers",
+                "layer_id": "000249",
+                "error": null,
+                "layer_num_parameters": 40496,
+                "layer_time": 0.4309256076812744
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer22.layers.norm1",
+                "layer_id": "000250",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 944
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer22.layers.relu1",
+                "layer_id": "000250",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4289577007293701
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer22.layers.conv1",
+                "layer_id": "000251",
+                "error": null,
+                "layer_num_parameters": 30208,
+                "layer_time": 0.42781543731689453
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer22.layers.norm2",
+                "layer_id": "000252",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer22.layers.relu2",
+                "layer_id": "000252",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4173908233642578
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer22.layers.conv2",
+                "layer_id": "000253",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4151463508605957
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer23",
+                "layer_id": "000254",
+                "error": null,
+                "layer_num_parameters": 41552,
+                "layer_time": 0.41050148010253906
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer23.layers",
+                "layer_id": "000255",
+                "error": null,
+                "layer_num_parameters": 41552,
+                "layer_time": 0.8462111949920654
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer23.layers.norm1",
+                "layer_id": "000256",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 976
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer23.layers.relu1",
+                "layer_id": "000256",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.43297481536865234
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer23.layers.conv1",
+                "layer_id": "000257",
+                "error": null,
+                "layer_num_parameters": 31232,
+                "layer_time": 0.9993033409118652
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer23.layers.norm2",
+                "layer_id": "000258",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer23.layers.relu2",
+                "layer_id": "000258",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5491933822631836
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer23.layers.conv2",
+                "layer_id": "000259",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.5511136054992676
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer24",
+                "layer_id": "000260",
+                "error": null,
+                "layer_num_parameters": 42608,
+                "layer_time": 0.5285904407501221
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer24.layers",
+                "layer_id": "000261",
+                "error": null,
+                "layer_num_parameters": 42608,
+                "layer_time": 0.5213532447814941
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer24.layers.norm1",
+                "layer_id": "000262",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 1008
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer24.layers.relu1",
+                "layer_id": "000262",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.6396656036376953
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer24.layers.conv1",
+                "layer_id": "000263",
+                "error": null,
+                "layer_num_parameters": 32256,
+                "layer_time": 0.626462459564209
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer24.layers.norm2",
+                "layer_id": "000264",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer24.layers.relu2",
+                "layer_id": "000264",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.6656725406646729
+            },
+            {
+                "layer_name": "features.denseblock3.denselayer24.layers.conv2",
+                "layer_id": "000265",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.7612435817718506
+            },
+            {
+                "layer_name": "features.transition3",
+                "layer_id": "000266",
+                "error": null,
+                "layer_num_parameters": 136240,
+                "layer_time": 0.6485860347747803
+            },
+            {
+                "layer_name": "features.transition3.norm",
+                "layer_id": "000267",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 1040
+            },
+            {
+                "layer_name": "features.transition3.relu",
+                "layer_id": "000267",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5444679260253906
+            },
+            {
+                "layer_name": "features.transition3.conv",
+                "layer_id": "000268",
+                "error": null,
+                "layer_num_parameters": 135200,
+                "layer_time": 0.5610415935516357
+            },
+            {
+                "layer_name": "features.transition3.pool",
+                "layer_id": "000269",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.570296049118042
+            },
+            {
+                "layer_name": "features.denseblock4",
+                "layer_id": "000270",
+                "error": null,
+                "layer_num_parameters": 550784,
+                "layer_time": 0.5635309219360352
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer1",
+                "layer_id": "000271",
+                "error": null,
+                "layer_num_parameters": 26504,
+                "layer_time": 0.4129195213317871
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer1.layers",
+                "layer_id": "000272",
+                "error": null,
+                "layer_num_parameters": 26504,
+                "layer_time": 0.4180419445037842
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer1.layers.norm1",
+                "layer_id": "000273",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 520
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer1.layers.relu1",
+                "layer_id": "000273",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.42132067680358887
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer1.layers.conv1",
+                "layer_id": "000274",
+                "error": null,
+                "layer_num_parameters": 16640,
+                "layer_time": 0.44112634658813477
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer1.layers.norm2",
+                "layer_id": "000275",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer1.layers.relu2",
+                "layer_id": "000275",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.44262242317199707
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer1.layers.conv2",
+                "layer_id": "000276",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.43341612815856934
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer2",
+                "layer_id": "000277",
+                "error": null,
+                "layer_num_parameters": 27560,
+                "layer_time": 0.430309534072876
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer2.layers",
+                "layer_id": "000278",
+                "error": null,
+                "layer_num_parameters": 27560,
+                "layer_time": 0.4307701587677002
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer2.layers.norm1",
+                "layer_id": "000279",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 552
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer2.layers.relu1",
+                "layer_id": "000279",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.42963337898254395
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer2.layers.conv1",
+                "layer_id": "000280",
+                "error": null,
+                "layer_num_parameters": 17664,
+                "layer_time": 0.42357730865478516
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer2.layers.norm2",
+                "layer_id": "000281",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer2.layers.relu2",
+                "layer_id": "000281",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.440657377243042
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer2.layers.conv2",
+                "layer_id": "000282",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.42294812202453613
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer3",
+                "layer_id": "000283",
+                "error": null,
+                "layer_num_parameters": 28616,
+                "layer_time": 0.44602227210998535
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer3.layers",
+                "layer_id": "000284",
+                "error": null,
+                "layer_num_parameters": 28616,
+                "layer_time": 0.414426326751709
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer3.layers.norm1",
+                "layer_id": "000285",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 584
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer3.layers.relu1",
+                "layer_id": "000285",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.44092893600463867
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer3.layers.conv1",
+                "layer_id": "000286",
+                "error": null,
+                "layer_num_parameters": 18688,
+                "layer_time": 0.518049955368042
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer3.layers.norm2",
+                "layer_id": "000287",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer3.layers.relu2",
+                "layer_id": "000287",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5522758960723877
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer3.layers.conv2",
+                "layer_id": "000288",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.590019702911377
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer4",
+                "layer_id": "000289",
+                "error": null,
+                "layer_num_parameters": 29672,
+                "layer_time": 0.5556156635284424
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer4.layers",
+                "layer_id": "000290",
+                "error": null,
+                "layer_num_parameters": 29672,
+                "layer_time": 0.5513997077941895
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer4.layers.norm1",
+                "layer_id": "000291",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 616
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer4.layers.relu1",
+                "layer_id": "000291",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5635430812835693
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer4.layers.conv1",
+                "layer_id": "000292",
+                "error": null,
+                "layer_num_parameters": 19712,
+                "layer_time": 0.573338508605957
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer4.layers.norm2",
+                "layer_id": "000293",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer4.layers.relu2",
+                "layer_id": "000293",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.49752211570739746
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer4.layers.conv2",
+                "layer_id": "000294",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.42241668701171875
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer5",
+                "layer_id": "000295",
+                "error": null,
+                "layer_num_parameters": 30728,
+                "layer_time": 0.42740416526794434
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer5.layers",
+                "layer_id": "000296",
+                "error": null,
+                "layer_num_parameters": 30728,
+                "layer_time": 0.44285011291503906
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer5.layers.norm1",
+                "layer_id": "000297",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 648
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer5.layers.relu1",
+                "layer_id": "000297",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4503321647644043
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer5.layers.conv1",
+                "layer_id": "000298",
+                "error": null,
+                "layer_num_parameters": 20736,
+                "layer_time": 0.43834352493286133
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer5.layers.norm2",
+                "layer_id": "000299",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer5.layers.relu2",
+                "layer_id": "000299",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.45429229736328125
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer5.layers.conv2",
+                "layer_id": "000300",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.46654677391052246
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer6",
+                "layer_id": "000301",
+                "error": null,
+                "layer_num_parameters": 31784,
+                "layer_time": 0.43566012382507324
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer6.layers",
+                "layer_id": "000302",
+                "error": null,
+                "layer_num_parameters": 31784,
+                "layer_time": 0.4365248680114746
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer6.layers.norm1",
+                "layer_id": "000303",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 680
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer6.layers.relu1",
+                "layer_id": "000303",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.44908976554870605
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer6.layers.conv1",
+                "layer_id": "000304",
+                "error": null,
+                "layer_num_parameters": 21760,
+                "layer_time": 0.44312405586242676
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer6.layers.norm2",
+                "layer_id": "000305",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer6.layers.relu2",
+                "layer_id": "000305",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4324955940246582
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer6.layers.conv2",
+                "layer_id": "000306",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4537007808685303
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer7",
+                "layer_id": "000307",
+                "error": null,
+                "layer_num_parameters": 32840,
+                "layer_time": 0.47397565841674805
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer7.layers",
+                "layer_id": "000308",
+                "error": null,
+                "layer_num_parameters": 32840,
+                "layer_time": 0.4746572971343994
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer7.layers.norm1",
+                "layer_id": "000309",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 712
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer7.layers.relu1",
+                "layer_id": "000309",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.45767664909362793
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer7.layers.conv1",
+                "layer_id": "000310",
+                "error": null,
+                "layer_num_parameters": 22784,
+                "layer_time": 0.46012353897094727
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer7.layers.norm2",
+                "layer_id": "000311",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer7.layers.relu2",
+                "layer_id": "000311",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4678366184234619
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer7.layers.conv2",
+                "layer_id": "000312",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.45653843879699707
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer8",
+                "layer_id": "000313",
+                "error": null,
+                "layer_num_parameters": 33896,
+                "layer_time": 0.5554721355438232
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer8.layers",
+                "layer_id": "000314",
+                "error": null,
+                "layer_num_parameters": 33896,
+                "layer_time": 0.568995475769043
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer8.layers.norm1",
+                "layer_id": "000315",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 744
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer8.layers.relu1",
+                "layer_id": "000315",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5930066108703613
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer8.layers.conv1",
+                "layer_id": "000316",
+                "error": null,
+                "layer_num_parameters": 23808,
+                "layer_time": 0.564983606338501
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer8.layers.norm2",
+                "layer_id": "000317",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer8.layers.relu2",
+                "layer_id": "000317",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5991289615631104
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer8.layers.conv2",
+                "layer_id": "000318",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.5889208316802979
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer9",
+                "layer_id": "000319",
+                "error": null,
+                "layer_num_parameters": 34952,
+                "layer_time": 0.63356614112854
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer9.layers",
+                "layer_id": "000320",
+                "error": null,
+                "layer_num_parameters": 34952,
+                "layer_time": 0.5253915786743164
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer9.layers.norm1",
+                "layer_id": "000321",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 776
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer9.layers.relu1",
+                "layer_id": "000321",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.45485639572143555
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer9.layers.conv1",
+                "layer_id": "000322",
+                "error": null,
+                "layer_num_parameters": 24832,
+                "layer_time": 0.4533100128173828
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer9.layers.norm2",
+                "layer_id": "000323",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer9.layers.relu2",
+                "layer_id": "000323",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.47096800804138184
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer9.layers.conv2",
+                "layer_id": "000324",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4435875415802002
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer10",
+                "layer_id": "000325",
+                "error": null,
+                "layer_num_parameters": 36008,
+                "layer_time": 0.43258142471313477
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer10.layers",
+                "layer_id": "000326",
+                "error": null,
+                "layer_num_parameters": 36008,
+                "layer_time": 0.4499795436859131
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer10.layers.norm1",
+                "layer_id": "000327",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 808
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer10.layers.relu1",
+                "layer_id": "000327",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4291706085205078
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer10.layers.conv1",
+                "layer_id": "000328",
+                "error": null,
+                "layer_num_parameters": 25856,
+                "layer_time": 0.453580379486084
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer10.layers.norm2",
+                "layer_id": "000329",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer10.layers.relu2",
+                "layer_id": "000329",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.43735289573669434
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer10.layers.conv2",
+                "layer_id": "000330",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.43370890617370605
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer11",
+                "layer_id": "000331",
+                "error": null,
+                "layer_num_parameters": 37064,
+                "layer_time": 0.4309525489807129
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer11.layers",
+                "layer_id": "000332",
+                "error": null,
+                "layer_num_parameters": 37064,
+                "layer_time": 0.4664287567138672
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer11.layers.norm1",
+                "layer_id": "000333",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 840
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer11.layers.relu1",
+                "layer_id": "000333",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.42563509941101074
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer11.layers.conv1",
+                "layer_id": "000334",
+                "error": null,
+                "layer_num_parameters": 26880,
+                "layer_time": 0.4288015365600586
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer11.layers.norm2",
+                "layer_id": "000335",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer11.layers.relu2",
+                "layer_id": "000335",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4303567409515381
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer11.layers.conv2",
+                "layer_id": "000336",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4354438781738281
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer12",
+                "layer_id": "000337",
+                "error": null,
+                "layer_num_parameters": 38120,
+                "layer_time": 0.42977356910705566
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer12.layers",
+                "layer_id": "000338",
+                "error": null,
+                "layer_num_parameters": 38120,
+                "layer_time": 0.4354121685028076
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer12.layers.norm1",
+                "layer_id": "000339",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 872
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer12.layers.relu1",
+                "layer_id": "000339",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4468710422515869
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer12.layers.conv1",
+                "layer_id": "000340",
+                "error": null,
+                "layer_num_parameters": 27904,
+                "layer_time": 0.5127382278442383
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer12.layers.norm2",
+                "layer_id": "000341",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer12.layers.relu2",
+                "layer_id": "000341",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5269162654876709
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer12.layers.conv2",
+                "layer_id": "000342",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.5756514072418213
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer13",
+                "layer_id": "000343",
+                "error": null,
+                "layer_num_parameters": 39176,
+                "layer_time": 0.5443861484527588
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer13.layers",
+                "layer_id": "000344",
+                "error": null,
+                "layer_num_parameters": 39176,
+                "layer_time": 0.5774157047271729
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer13.layers.norm1",
+                "layer_id": "000345",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 904
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer13.layers.relu1",
+                "layer_id": "000345",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.6070413589477539
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer13.layers.conv1",
+                "layer_id": "000346",
+                "error": null,
+                "layer_num_parameters": 28928,
+                "layer_time": 0.6020381450653076
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer13.layers.norm2",
+                "layer_id": "000347",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer13.layers.relu2",
+                "layer_id": "000347",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.44300246238708496
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer13.layers.conv2",
+                "layer_id": "000348",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.44011688232421875
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer14",
+                "layer_id": "000349",
+                "error": null,
+                "layer_num_parameters": 40232,
+                "layer_time": 0.4570131301879883
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer14.layers",
+                "layer_id": "000350",
+                "error": null,
+                "layer_num_parameters": 40232,
+                "layer_time": 0.4408688545227051
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer14.layers.norm1",
+                "layer_id": "000351",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 936
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer14.layers.relu1",
+                "layer_id": "000351",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.43689584732055664
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer14.layers.conv1",
+                "layer_id": "000352",
+                "error": null,
+                "layer_num_parameters": 29952,
+                "layer_time": 0.4419384002685547
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer14.layers.norm2",
+                "layer_id": "000353",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer14.layers.relu2",
+                "layer_id": "000353",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4801771640777588
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer14.layers.conv2",
+                "layer_id": "000354",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.45156002044677734
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer15",
+                "layer_id": "000355",
+                "error": null,
+                "layer_num_parameters": 41288,
+                "layer_time": 0.4487183094024658
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer15.layers",
+                "layer_id": "000356",
+                "error": null,
+                "layer_num_parameters": 41288,
+                "layer_time": 0.4431450366973877
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer15.layers.norm1",
+                "layer_id": "000357",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 968
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer15.layers.relu1",
+                "layer_id": "000357",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4724750518798828
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer15.layers.conv1",
+                "layer_id": "000358",
+                "error": null,
+                "layer_num_parameters": 30976,
+                "layer_time": 0.43715786933898926
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer15.layers.norm2",
+                "layer_id": "000359",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer15.layers.relu2",
+                "layer_id": "000359",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.46364545822143555
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer15.layers.conv2",
+                "layer_id": "000360",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.4398510456085205
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer16",
+                "layer_id": "000361",
+                "error": null,
+                "layer_num_parameters": 42344,
+                "layer_time": 0.45589303970336914
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer16.layers",
+                "layer_id": "000362",
+                "error": null,
+                "layer_num_parameters": 42344,
+                "layer_time": 0.4462890625
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer16.layers.norm1",
+                "layer_id": "000363",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 1000
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer16.layers.relu1",
+                "layer_id": "000363",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.4570326805114746
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer16.layers.conv1",
+                "layer_id": "000364",
+                "error": null,
+                "layer_num_parameters": 32000,
+                "layer_time": 0.44803571701049805
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer16.layers.norm2",
+                "layer_id": "000365",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 128
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer16.layers.relu2",
+                "layer_id": "000365",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.45171666145324707
+            },
+            {
+                "layer_name": "features.denseblock4.denselayer16.layers.conv2",
+                "layer_id": "000366",
+                "error": null,
+                "layer_num_parameters": 9216,
+                "layer_time": 0.463470458984375
+            },
+            {
+                "layer_name": "features.norm5",
+                "layer_id": "000367",
+                "error": "unsupported operand type(s) for *: 'NoneType' and 'float'",
+                "layer_num_parameters": 1032
+            },
+            {
+                "layer_name": "class_layers",
+                "layer_id": "000367",
+                "error": null,
+                "layer_num_parameters": 3102,
+                "layer_time": 0.6787886619567871
+            },
+            {
+                "layer_name": "class_layers.relu",
+                "layer_id": "000368",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5870466232299805
+            },
+            {
+                "layer_name": "class_layers.pool",
+                "layer_id": "000369",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5906486511230469
+            },
+            {
+                "layer_name": "class_layers.flatten",
+                "layer_id": "000370",
+                "error": null,
+                "layer_num_parameters": 0,
+                "layer_time": 0.5684847831726074
+            },
+            {
+                "layer_name": "class_layers.out",
+                "layer_id": "000371",
+                "error": null,
+                "layer_num_parameters": 3102,
+                "layer_time": 0.5890891551971436
+            }
+        ],
+        "cam_anim_time": 355.98705315589905
+    }
+]

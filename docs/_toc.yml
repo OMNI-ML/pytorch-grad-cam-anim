@@ -5,4 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: animations_breast_model
-- file: animations_densenet_bear
+- file: animations_resnet_bear
+- file: animations_mednist_densenet121
